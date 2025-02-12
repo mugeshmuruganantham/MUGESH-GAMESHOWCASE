@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <title>MainPage</title>
+  <link rel="stylesheet" href="mainpage.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://css.gg/css?=|arrow-right-o" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+  <script src="mainpage.js"></script>
+  <header id="header">
+    <a href="#" class="logo">Logo</a>
+    <div class="search-bar">
+      <input type="text" class="search-text" placeholder="search text">
+      <button class="btn-search">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="genre.html">Genre</a></li>
+      <li><a href="#">Top Chart</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </header>
+  <!--************* For image cards ********************-->
+  <div class="slide-container">
+    <div class="slide active">
+      <div class="image-container">
+
+        <img src="cropped-Wallpapers-Minecraft.jpg" class="image active" alt="Image 3">
+        <img src="cropped-image1.jpg" class="image  " alt="Image 1">
+        <img src="cropped-image2.jpg" class="image" alt="Image 2">
+      </div>
+
+      <div class="dots-container">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+  <!-- *************For Flip  Cards -->
+
+  <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$ ACTION &&&&&&&&&&&&&&&&&&& -->
+  <marquee behavior="scroll" direction="right" scrollamount="10px" scrolldelay="40px"><span id="action">ACTION</span>
+  </marquee>
+  <div class="card-containers">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="image1.jpg" alt="Avatar" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <div class="content-wrapper">
+            <h1>Call of Duty Warzone</h1>
+            <button class="download-button">Download</button>
+            <div class="info-option" onclick="toggleDetails()">i</div>
+            <div class="card-details">
+              <p>Call of Duty: Warzone is a free-to-play battle royale game set in the iconic Call of Duty universe.
+                Players compete in large-scale, last-man-standing matches, utilizing a variety of weapons and tactics to
+                emerge victorious</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="game1.jpg" alt="Avatar" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <div class="content-wrapper">
+            <h1>Red Dead Redemption II</h1>
+            <button class="download-button">Download</button>
+            <div class="info-option">i</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="game4.jpg" alt="Avatar" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <div class="content-wrapper">
+            <h1>Pubg</h1>
+            <button class="download-button">Download</button>
+            <div class="info-option">i</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="action4.jpg" alt="Avatar" style="width:100%;height:100%;">
+        </div>
+        <div class="flip-card-back">
+          <div class="content-wrapper">
+            <h1>Reminent From the Ashes</h1>
+            <button class="download-button">Download</button>
+            <div class="info-option">i</div>
+
+          </div>
+        </div>
+      </div>
+      <!-- Add more flip cards here -->
+    </div>
+
+    <a href="other-page.html" class="arrow-container">
+      <div class="circle-arrow">
+        <span>&rarr;</span>
+      </div>
+      <h3 id="seemore">See More</h3>
+    </a>
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$ RACING &&&&&&&&&&&&&&&&&&& -->
+    <marquee behavior="scroll" direction="right" scrollamount="10px" scrolldelay="40px"><span id="action">RACING</span>
+    </marquee>
+    <div class="card-containers">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="racing1.webp" alt="Avatar" style="width:99%;height:99%;">
+          </div>
+          <div class="flip-card-back">
+            <div class="content-wrapper">
+              <h1>Fast And Furious showdown</h1>
+              <button class="download-button">Download</button>
+              <div class="info-option">i</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="racing2.jpg" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <div class="content-wrapper">
+              <h1>Need For Speed Rivals</h1>
+              <button class="download-button">Download</button>
+              <div class="info-option">i</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="racing3.jpg" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <div class="content-wrapper">
+              <h1>Froza Horizon 5</h1>
+              <button class="download-button">Download</button>
+              <div class="info-option">i</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="racing4.jpg" alt="Avatar" style="width:100%;height:100%;">
+          </div>
+          <div class="flip-card-back">
+            <div class="content-wrapper">
+              <h1>Project Cars 3</h1>
+              <button class="download-button">Download</button>
+              <div class="info-option">i</div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Add more flip cards here -->
+      </div>
+
+      <a href="other-page.html" class="arrow-container">
+        <div class="circle-arrow">
+          <span>&rarr;</span>
+        </div>
+        <h3 id="seemore">See More</h3>
+      </a>
+
+
+      <!--******************************** Horror ************************************-->
+      <marquee behavior="scroll" direction="right" scrollamount="10px" scrolldelay="40px"><span
+          id="action">HORROR</span></marquee>
+      <div class="card-containers">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="horror1.jpg" alt="Avatar" style="width:99%;height:99%;">
+            </div>
+            <div class="flip-card-back">
+              <div class="content-wrapper">
+                <h1>Dead By Daylight III</h1>
+                <button class="download-button">Download</button>
+                <div class="info-option">i</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="horror2.jpg" alt="Avatar" style="width:100%;height:100%;">
+            </div>
+            <div class="flip-card-back">
+              <div class="content-wrapper">
+                <h1>The Evil Within</h1>
+                <button class="download-button">Download</button>
+                <div class="info-option">i</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="horror3.jpg" alt="Avatar" style="width:100%;height:100%;">
+            </div>
+            <div class="flip-card-back">
+              <div class="content-wrapper">
+                <h1>Among The Sleep</h1>
+                <button class="download-button">Download</button>
+                <div class="info-option">i</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="horror4.jpg" alt="Avatar" style="width:100%;height:100%;">
+            </div>
+            <div class="flip-card-back">
+              <div class="content-wrapper">
+                <h1>Visage</h1>
+                <button class="download-button">Download</button>
+                <div class="info-option">i</div>
+
+              </div>
+            </div>
+          </div>
+          <!-- Add more flip cards here -->
+        </div>
+
+        <a href="other-page.html" class="arrow-container">
+          <div class="circle-arrow">
+            <span>&rarr;</span>
+          </div>
+          <h3 id="seemore">See More</h3>
+        </a>
+
+        <footer id="footer">
+          <div class="footer-container">
+            <div class="logo-section">
+              <img src="Game icon.png" alt="logo" style="width:100px;height:100px;">
+              <p>Game Showcase</p>
+            </div>
+            <div class="details-section">
+              <p >Welcome to GameShowcase, your ultimate destination for discovering and exploring the latest games and their information. Immerse yourself in a world of excitement and entertainment as we bring you a curated selection of the best titles. Level up your gaming experience with GameShowcase!</p>
+            </div>
+            <div class="contact-section">
+              <h3>contact us</h3>
+              <div class="rounded-social-buttons">
+                <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 2024 GameShowcase. All Rights Reserved.</p>
+          </div>
+        </footer>
+
+</body>
+
+
+
+
+
+
+</html>
